@@ -1,0 +1,28 @@
+{
+  "name": "damel/flight-skeleton",
+  "description": "Skeleton for applications based on the Flight PHP microframework.",
+  "license": "MIT",
+  "version": "1.2.0",
+  "keywords": ["flight", "skeleton"],
+  "authors": [
+    {
+      "name": "Daniel Melzer",
+      "email": "daniel@melzer.ws",
+      "homepage": "http://daniel.melzer.ws"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "mikecao/flight": "~1.2"
+  },
+  "suggest": {
+    "forestry/log": "Small log file writer with adjustable log level settings.",
+    "forestry/orm": "Small ORM for simple CRUD operations",
+    "maximebf/consolekit": "PHP 5.3 library to create command line utilities"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}
