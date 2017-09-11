@@ -3,10 +3,14 @@
 //Routes of the application.
 \Flight::route('/', array('\Acme\Demo\Controller\Demo', 'index'));
 
+\Flight::route('/dashboard', array('\Acme\Demo\Controller\Dashboard', 'index'));
+
 //Mappings.
 \Flight::map('notFound', function() {
 	\Flight::render('404', array());
 });
+
+
 
 //\Flight::map('error', function(\Exception $e) {
 //	//You probably want to log the error.
