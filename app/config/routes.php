@@ -5,6 +5,9 @@
 
 \Flight::route('/dashboard', array('\Acme\Demo\Controller\Dashboard', 'index'));
 
+\Flight::route('/first', array('\Acme\Demo\Controller\TestTask', 'first'));
+\Flight::route('/second', array('\Acme\Demo\Controller\TestTask', 'second'));
+
 //Mappings.
 \Flight::map('notFound', function() {
 	\Flight::render('404', array());
